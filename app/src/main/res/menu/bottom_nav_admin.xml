@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/room"
+        android:icon="@drawable/baseline_bedroom_parent_24"
+        android:title="Room" />
+
+    <item
+        android:id="@+id/mess"
+        android:icon="@drawable/baseline_fastfood_24"
+        android:title="Mess" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+    <item
+        android:id="@+id/all_room"
+        android:icon="@drawable/baseline_bookmark_add_24"
+        android:title="Rooms" />
+    <item
+        android:id="@+id/book_room"
+        android:icon="@drawable/baseline_bookmark_remove_24"
+        android:title="Booked" />
+
+</menu>

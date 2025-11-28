@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="colorPrimary">#FF0000</color>
+
+    <!--<color name="colorPrimary">#d50000</color>-->
+    <color name="colorPrimaryDark">#00574B</color>
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <color name="primary">#F0AAAA</color>
+    <color name="primary_dark">#c13f31</color>
+    <color name="transparent_black_ten_percent">#1A000000</color>
+    <color name="Background">#000000</color>
+    <color name="lightpurple">#DACCE7</color>
+    <color name="lightpurple1">#92E9DBF4</color>
+    <color name="lightpurple2">#D4BAE9</color>
+    <color name="purple">#935BC6</color>
+    <!--<color name="white">#FFFFFF</color>-->
+    <color name="orange">#E68C06</color>
+    <color name="orangelight">#F4E8D5</color>
+    <color name="dark_purple">#592AAC</color>
+    <color name="bluelight">#188AE4</color>
+
+    <color name="Green">#5ED315</color>
+    <color name="lightgrey">#BAB7B7</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="blue">#182DA1</color>
+    <color name="gray_400">#85E1DFDF</color>
+    <color name="gray_600">#FF757575</color>
+
+    <color name="colorPressed">#FF0000</color> <!-- Red when pressed -->
+    <color name="colorFocused">#00FF00</color> <!-- Green when focused -->
+    <color name="colorDefault">#0000FF</color> <!-- Blue as default faf4eb-->
+    <color name="transparent">#00FFFFFF</color>
+    <color name="primaryLight">#e3ded6</color>
+    <color name="primaryDark">#482411</color>
+    <color name="primaryMedium">#7b6253</color>
+    <color name="green">#479f76</color>
+    <color name="yellow">#fd9942</color>
+    <color name="red">#dc3545</color>
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoormateFinal"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminRoomRemoveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleRoomAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavMessRemoveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavRoomRemoveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleRoomStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditMessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SingleOwnerRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleMessOwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleMessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestoreStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMessSingleItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMessSingleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRoomSingleItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRoomSingleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DoormateFinal" />
+        <activity
+            android:name=".RestoreAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadMessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateOwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestoreOwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOwnerActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".LoginActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

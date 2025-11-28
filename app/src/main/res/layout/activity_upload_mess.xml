@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadMessActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/upl_mess_upload">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Register Mess"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upl_room_name_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="@dimen/_57sdp"
+                    android:layout_below="@id/tv_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Mess Name"
+                    app:boxBackgroundColor="@color/lightpurple"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:boxStrokeColor="@color/dark_purple"
+                    app:boxStrokeWidth="@dimen/_2sdp"
+                    app:hintTextColor="@color/dark_purple">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upl_mess_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/mess_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upl_room_name_layout"
+                    android:layout_alignStart="@id/upl_room_name_layout"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upl_room_location_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mess_type"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Mess Location"
+                    android:minHeight="@dimen/_57sdp"
+                    app:boxBackgroundColor="@color/lightpurple"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:boxStrokeColor="@color/dark_purple"
+                    app:boxStrokeWidth="@dimen/_2sdp"
+                    app:hintTextColor="@color/dark_purple">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upl_mess_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minHeight="@dimen/_50sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upl_room_price_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upl_room_location_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Mess Price"
+                    android:minHeight="@dimen/_57sdp"
+                    app:boxBackgroundColor="@color/lightpurple"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:boxStrokeColor="@color/dark_purple"
+                    app:boxStrokeWidth="@dimen/_2sdp"
+                    app:hintTextColor="@color/dark_purple">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upl_mess_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minHeight="@dimen/_50sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upl_room_description_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upl_room_price_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Mess Description"
+                    android:minHeight="@dimen/_57sdp"
+                    app:boxBackgroundColor="@color/lightpurple"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:boxStrokeColor="@color/dark_purple"
+                    app:boxStrokeWidth="@dimen/_2sdp"
+                    app:hintTextColor="@color/dark_purple">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upl_facility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minHeight="@dimen/_50sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/roomFacilities"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:cardCornerRadius="20dp"
+                    app:strokeColor="@color/purple"
+                    app:strokeWidth="2dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/lightpurple"
+                    android:layout_below="@id/upl_room_description_layout">
+
+                    <GridLayout
+                        android:id="@+id/grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:padding="@dimen/_8sdp">
+
+                        <CheckBox
+                            android:id="@+id/CheckBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="AC" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Drinking Water" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Parcel" />
+
+<!--                        <CheckBox-->
+<!--                            android:id="@+id/CheckBox4"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/_6sdp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="AC" />-->
+
+<!--                        <CheckBox-->
+<!--                            android:id="@+id/CheckBox5"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/_6sdp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="Cable" />-->
+
+<!--                        <CheckBox-->
+<!--                            android:id="@+id/CheckBox6"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/_6sdp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:text="Gas Line" />-->
+
+                    </GridLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!--            <com.google.android.material.textfield.TextInputLayout-->
+                <!--                android:id="@+id/upl_facility_layout"-->
+                <!--                android:layout_width="@dimen/_254sdp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_below="@id/upl_room_price_layout"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:layout_marginStart="@dimen/_15sdp"-->
+                <!--                android:layout_marginTop="@dimen/_12sdp"-->
+                <!--                android:layout_marginEnd="@dimen/_15sdp"-->
+                <!--                android:hint="Room Facilities"-->
+                <!--                android:minHeight="@dimen/_57sdp"-->
+                <!--                app:boxBackgroundColor="@color/lightpurple"-->
+                <!--                app:boxCornerRadiusBottomEnd="@dimen/_15sdp"-->
+                <!--                app:boxCornerRadiusBottomStart="@dimen/_15sdp"-->
+                <!--                app:boxCornerRadiusTopEnd="@dimen/_15sdp"-->
+                <!--                app:boxCornerRadiusTopStart="@dimen/_15sdp"-->
+                <!--                app:boxStrokeColor="@color/dark_purple"-->
+                <!--                app:boxStrokeWidth="@dimen/_2sdp"-->
+                <!--                app:hintTextColor="@color/dark_purple">-->
+
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:id="@+id/upl_facility"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="@dimen/_6sdp"-->
+                <!--                    android:inputType="textMultiLine"-->
+                <!--                    android:maxLines="5"-->
+                <!--                    android:minHeight="@dimen/_50sdp" />-->
+
+                <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upl_owner_name_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/roomFacilities"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Owner Name"
+                    android:minHeight="@dimen/_57sdp"
+                    app:boxBackgroundColor="@color/lightpurple"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:boxStrokeColor="@color/dark_purple"
+                    app:boxStrokeWidth="@dimen/_2sdp"
+                    app:hintTextColor="@color/dark_purple">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upl_owner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minHeight="@dimen/_50sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upl_owner_contact_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upl_owner_name_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Owner Contact"
+                    android:minHeight="@dimen/_57sdp"
+                    app:boxBackgroundColor="@color/lightpurple"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:boxStrokeColor="@color/dark_purple"
+                    app:boxStrokeWidth="@dimen/_2sdp"
+                    app:hintTextColor="@color/dark_purple">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/upl_owner_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minHeight="@dimen/_50sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/open_time_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_below="@id/upl_owner_contact_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:cardBackgroundColor="@color/lightpurple"
+                    app:cardCornerRadius="20dp"
+                    app:strokeColor="@color/primaryMedium"
+                    app:strokeWidth="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Open Time"
+                            android:textSize="16sp"
+                            android:textColor="@color/dark_purple"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TimePicker
+                            android:id="@+id/mess_open_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:timePickerMode="spinner"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/close_time_layout"
+                    android:layout_width="@dimen/_254sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_below="@id/open_time_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:cardBackgroundColor="@color/lightpurple"
+                    app:cardCornerRadius="20dp"
+                    app:strokeColor="@color/dark_purple"
+                    app:strokeWidth="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Close Time"
+                            android:textColor="@color/dark_purple"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TimePicker
+                            android:id="@+id/mess_close_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:timePickerMode="spinner"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/room_relative"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_below="@id/close_time_layout"
+                    android:layout_centerHorizontal="true"
+                    app:cardBackgroundColor="@color/white">
+
+                    <ImageView
+                        android:id="@+id/upl_mess_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/upload_image" />
+
+                    <ImageView
+                        android:id="@+id/upl_mess_load"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <!-- Submit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upl_mess_upload"
+            android:layout_width="@dimen/_282sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:backgroundTint="@color/dark_purple"
+            android:padding="@dimen/_10sdp"
+            android:text="Register"
+            android:textColor="@color/primaryLight"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_register_24"
+            app:iconSize="22dp"
+            app:iconGravity="textStart"/>
+
+    </RelativeLayout>
+
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="5dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Upload Mess info"-->
+<!--                android:textColor="#9C27B0"-->
+<!--                android:textSize="36sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Mess name" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/upl_mess_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <Spinner-->
+<!--                android:id="@+id/mess_type"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/_10sdp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Ress Location" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/upl_mess_location"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:text="mess Price" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/upl_mess_price"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:text="facility" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/upl_facility"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:text="Owner Name" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/upl_owner_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:text="Owner Contact" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/upl_owner_contact"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:text="Open time" />-->
+<!--            <TimePicker-->
+<!--                android:id="@+id/mess_open_time"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:timePickerMode="spinner" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:text="close time" />-->
+<!--            <TimePicker-->
+<!--                android:id="@+id/mess_close_time"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:timePickerMode="spinner" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Upload your mess Image"-->
+<!--                android:textSize="22dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <ImageView-->
+
+<!--                android:id="@+id/upl_mess_image"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/ic_launcher_background" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/mess_relative"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:visibility="gone"-->
+
+<!--                >-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/upl_mess_load"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_centerHorizontal="true" />-->
+
+
+<!--            </RelativeLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/upl_mess_upload"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:backgroundTint="#CDDC39"-->
+<!--                android:text="Submit" />-->
+
+
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/dormenetname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:fontFamily="@font/josefinsanssemibold"
+        android:gravity="center"
+        android:text="Dormnet"
+        android:textColor="@color/purple"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/splashslogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dormenetname"
+        android:layout_marginLeft="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:text="Easiest way to find your nest"
+        android:textColor="@color/Background"
+        android:textSize="40sp"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashslogan"
+        android:layout_marginStart="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_19sdp"
+        android:orientation="horizontal"
+        app:justifyContent="space_between">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/user"
+            android:layout_width="@dimen/_123sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_below="@+id/dormenetname"
+            android:background="@drawable/recta"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Student"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/owner"
+            android:layout_width="@dimen/_123sdp"
+            android:layout_height="@dimen/_62sdp"
+            android:layout_below="@+id/dormenetname"
+            android:background="@drawable/recta2"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Owner"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_below="@+id/flex"
+        android:layout_marginStart="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_19sdp"
+        android:background="@drawable/recta"
+        android:backgroundTint="@color/blue"
+        android:text="Admin"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestoreAdminActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:layout_marginTop="170dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:hint="Email"
+        app:boxBackgroundColor="@color/lightpurple"
+        app:boxCornerRadiusBottomEnd="@dimen/_12sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_12sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_12sdp"
+        app:boxCornerRadiusTopStart="@dimen/_12sdp"
+        app:hintTextColor="@color/purple"
+        app:startIconDrawable="@drawable/baseline_alternate_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resetUsingEmail"
+            android:layout_width="@dimen/_255sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_2sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/resetPassbtn"
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Forget"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple"/>
+
+</LinearLayout>

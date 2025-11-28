@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FeedBackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback Form"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Your Feedback"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonViewFeedbacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Feedbacks" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".OwnerMainActivity"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_purple">
+
+        <ImageView
+            android:layout_marginTop="-20dp"
+            android:layout_gravity="center"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_marginTop="-50dp"
+            android:id="@+id/UserNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Doormate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:fontFamily="@font/josefinsanssemibold"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/UserEmailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>
